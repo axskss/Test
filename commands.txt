@@ -1,0 +1,46 @@
+
+ls
+
+cd ~/Desktop
+
+git clone https://github.com/axskss/test.git
+
+mkdir menu
+
+touch menu.html
+
+vim menu.html
+
+<h1>メニュー</h1>
+<a href="../game/game.html">ゲーム</a>
+
+「esc」->「i」
+「esc」->「:wq」
+
+cd ..
+
+git add menu
+
+git commit -m "コミットメッセージ"
+
+git push -u origin master
+
+git pull
+
+<h1>インデックス</h1>
+<a href="menu/menu.html">メニュー</a>
+
+<h1>ゲーム</h1>
+<a href="../menu/menu.html">メニュー</a>
+
+
+
+
+<<<<<<< HEAD
+<a href="../menu/menu.html">メニュー</a>
+=======
+<a href="../index.html">インデックス</a>
+>>>>>>> d2553c6e5f929a24a13d25cfacd4732b028a0053
+
+
+<a href="../menu/menu.html">メニュー</a>
